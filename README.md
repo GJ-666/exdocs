@@ -282,3 +282,41 @@ API：/data/kline/kline.json
   "error": false
 }
 ```
+
+## 盘口、最新成交数据
+
+URL: https://data-cache.gj.com  
+API：/data/kline/symbolData.json
+
+参数
+
+```js
+{
+  symbol: "btcusdt"; // 交易对
+  dataKey: "L3GckVpMcYVQOxNWrA0l1IfzHCsjDqFb"; //  参照上文 《建立 Socket 通信》 发送symbol事件后会接收到 `actions: symbol`的事件,该事件会携带dataKey
+}
+```
+
+响应
+
+```json
+{
+  "redirect": false,
+  "code": 200,
+  "verify": false,
+  "messages": {
+    "data": {
+      "items": [
+       "bid0": {}, // 不同精度的挂单数据
+       "bid1": {}, // 不同精度的挂单数据
+       "bid2": {}, // 不同精度的挂单数据
+       "price": {}, // 24小时成交数据
+       "trade": [] // 历史成交数据
+      ]
+    },
+    "serverTime": "2019-09-09T16:50:43+0800"
+  },
+  "ok": true,
+  "error": false
+}
+```
