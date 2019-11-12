@@ -96,7 +96,7 @@
 - 语言（可选）:lang=zh_CN 如果不带会自动检测浏览器的语言做适配，默认为服务器的 Locale
 - 时区（可选）: timeZone=480 数值，480 表示正 8 区，默认为服务器的 TimeZone
 - 应用的 Id: appId 这个值根据后台协商定义:web, mobile, adroid,ios
-- t 时间戳 聚合到分钟
+- t 时间戳 聚合到分钟
 
 示例
 

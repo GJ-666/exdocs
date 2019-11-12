@@ -283,3 +283,62 @@ Response
   "error": false
 }
 ```
+
+## Order book & Market trades
+
+URL: https://data-cache.gj.com  
+API：/data/kline/symbolData.json
+
+Parameter
+
+```js
+{
+  symbol: "btcusdt";
+  dataKey: "L3GckVpMcYVQOxNWrA0l1IfzHCsjDqFb"; //  Refer to "Create Socket". After sending the symbol event, you will receive the "actions: symbol" event, which will return datakey
+}
+```
+
+Response
+
+```json
+{
+  "redirect": false,
+  "code": 200,
+  "verify": false,
+  "messages": {
+    "data": {
+      "items": [
+		"bid0": { // Order book of different precision (Default options:bid0)
+			"trade": {
+				"volume": 32.484,
+				"side": "SELL",
+				"price": 0.16645
+			},
+			"buys": [],
+			"sells": []
+		}, 
+		"bid1": {}, // Order book of different precision
+		"bid2": {}, // Order book of different precision
+		"price": {}, // 24H
+		"trade": [ 	// Market trades list
+			{
+				"volume": 32.484,
+				"side": "SELL",
+				"price": 0.16645,
+				"ctime": "2019-11-12T12:52:41+0800"
+			}, {
+				"volume": 5.143,
+				"side": "SELL",
+				"price": 0.16651,
+				"ctime": "2019-11-12T12:51:41+0800"
+			},
+			...
+		] 
+      ]
+    },
+    "serverTime": "2019-09-09T16:50:43+0800"
+  },
+  "ok": true,
+  "error": false
+}
+```
