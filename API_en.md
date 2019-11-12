@@ -167,10 +167,12 @@ if (json.code == 302) {
 }
 ```
 
-## Quotes
+## Markets
 
 URL: https://data-cache.gj.com  
-API: /data/kline/price.json  (https://data-cache.gj.com/data/kline/price.json)
+API: /data/kline/price.json  
+(https://data-cache.gj.com/data/kline/price.json)
+
 Method: GET
 
 Response
@@ -244,6 +246,7 @@ Parameter
 
 URL: https://data-cache.gj.com  
 API：/data/kline/kline.json
+(https://data-cache.gj.com/data/kline/kline.json)
 
 Parameter
 
@@ -288,6 +291,7 @@ Response
 
 URL: https://data-cache.gj.com  
 API：/data/kline/symbolData.json
+(https://data-cache.gj.com/data/kline/symbolData.json)
 
 Parameter
 
