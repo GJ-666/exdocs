@@ -49,15 +49,15 @@ Response
             "symbols":{
                 "symbols":[
                     {
-                        "name":"USDT",
+                        "name":"USDT", //The base currency
                         "symbols":[
                             {
-                                "limitVolumeMin":0.0001,
-                                "symbol":"btcusdt",
-                                "priceUnit":"0.01",
+                                "limitVolumeMin":0.0001, 
+                                "symbol":"btcusdt", // Unique identification of the market pair
+                                "priceUnit":"0.01", //Tick Sizes:The intervals that a price can be increased/decreased by
                                 "marketBuyMin":5,
                                 "volumeUnit":"0.0001",
-                                "name":"BTC/USDT",
+                                "name":"BTC/USDT", //market pair
                                 "depths":[
                                     "0.01",
                                     "0.1",
@@ -65,7 +65,7 @@ Response
                                 ],
                                 "timeZone":"UTC",
                                 "marketSellMin":0.001,
-                                "limitPriceMin":0.01
+                                "limitPriceMin":0.01 
                             },
                             "...": "..."
                         ]
@@ -168,6 +168,7 @@ if (json.code == 302) {
 ```
 
 ## Markets
+Overview of market data for all symbol（tickers）
 
 URL: https://data-cache.gj.com  
 API: /data/kline/price.json  

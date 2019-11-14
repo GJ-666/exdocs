@@ -53,11 +53,11 @@
                         "symbols":[
                             {
                                 "limitVolumeMin":0.0001,
-                                "symbol":"btcusdt",
-                                "priceUnit":"0.01",
+                                "symbol":"btcusdt", //交易对唯一标识
+                                "priceUnit":"0.01", //价格精度，最小加/减数值
                                 "marketBuyMin":5,
-                                "volumeUnit":"0.0001",
-                                "name":"BTC/USDT",
+                                "volumeUnit":"0.0001", //交易量精度
+                                "name":"BTC/USDT", //交易对
                                 "depths":[
                                     "0.01",
                                     "0.1",
